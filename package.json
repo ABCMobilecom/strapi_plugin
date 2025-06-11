@@ -21,10 +21,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "strapi-plugin build",
-    "watch": "strapi-plugin watch",
-    "watch:link": "strapi-plugin watch:link",
-    "verify": "strapi-plugin verify"
+    "build": "strapi-plugin-esputnik build",
+    "watch": "strapi-plugin-esputnik watch",
+    "watch:link": "strapi-plugin-esputnik watch:link",
+    "verify": "strapi-plugin-esputnik verify"
   },
   "dependencies": {
     "@strapi/design-system": "^2.0.0-rc.25",
@@ -50,11 +50,11 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "strapi-plugin",
+    "name": "strapi-plugin-esputnik",
     "displayName": "",
     "description": ""
   },
-  "name": "strapi-plugin",
+  "name": "strapi-plugin-esputnik",
   "description": "",
   "license": "MIT",
   "author": ""
