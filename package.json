@@ -3,6 +3,10 @@
   "keywords": [],
   "type": "commonjs",
   "exports": {
+    ".": {
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js"
+    },
     "./package.json": "./package.json",
     "./strapi-admin": {
       "source": "./admin/src/index.js",
@@ -55,6 +59,8 @@
     "description": ""
   },
   "name": "strapi-plugin-esputnik",
+  "main": "dist/server/index.js",
+  "module": "dist/server/index.mjs",
   "description": "",
   "license": "MIT",
   "author": ""
