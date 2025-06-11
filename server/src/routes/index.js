@@ -5,5 +5,9 @@ export default {
   "content-api": {
     type: "content-api",
     routes: [...contentApi],
-  }
+  },
+  admin: {               
+    type: 'admin',
+    routes: [...adminRoutes],
+  },
 };

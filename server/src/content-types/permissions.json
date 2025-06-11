@@ -1,0 +1,16 @@
+{
+  "collectionName": "plugin::strapi-plugin",
+  "info": {
+    "name": "eSputnik Access",
+    "description": "Permissions for eSputnik Plugin"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "view": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
