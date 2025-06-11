@@ -3,10 +3,6 @@
   "keywords": [],
   "type": "commonjs",
   "exports": {
-    ".": {
-      "import": "./dist/server/index.mjs",
-      "require": "./dist/server/index.js"
-    },
     "./package.json": "./package.json",
     "./strapi-admin": {
       "source": "./admin/src/index.js",
@@ -25,10 +21,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "strapi-plugin-esputnik build",
-    "watch": "strapi-plugin-esputnik watch",
-    "watch:link": "strapi-plugin-esputnik watch:link",
-    "verify": "strapi-plugin-esputnik verify"
+    "build": "strapi-plugin build",
+    "prepare": "npm run build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify"
   },
   "dependencies": {
     "@strapi/design-system": "^2.0.0-rc.25",
@@ -36,7 +33,7 @@
     "react-intl": "^7.1.11"
   },
   "devDependencies": {
-    "@strapi/strapi": "^5.14.0",
+    "@strapi/strapi": "^5.15.0",
     "@strapi/sdk-plugin": "^5.3.2",
     "prettier": "^3.5.3",
     "react": "^18.3.1",
@@ -45,7 +42,7 @@
     "styled-components": "^6.1.18"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^5.14.0",
+    "@strapi/strapi": "^5.15.0",
     "@strapi/sdk-plugin": "^5.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -54,14 +51,12 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "strapi-plugin-esputnik",
+    "name": "strapi-plugin",
     "displayName": "",
     "description": ""
   },
   "name": "strapi-plugin-esputnik",
-  "main": "dist/server/index.js",
-  "module": "dist/server/index.mjs",
   "description": "",
   "license": "MIT",
-  "author": ""
+  "author": "Ruslan Torshin <torshinrg@gmail.com>"
 }

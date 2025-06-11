@@ -22,7 +22,7 @@ export default {
     app.registerPlugin({
       id: PLUGIN_ID,
       initializer: Initializer,
-      isReady: true,
+      isReady: false,
       name: PLUGIN_ID,
     });
   },
